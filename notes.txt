@@ -1,0 +1,7 @@
+You need to:
+
+- Finish the json syntax to load and upload information to 
+data.json.
+
+- You need to make the rest of 4-7 in the habit tracker. 
+

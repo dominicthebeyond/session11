@@ -1,0 +1,27 @@
+[
+    {
+        "habit": "Sunlight",
+        "duration": "5-10 min"
+    },
+    {
+        "habit": "Schedule Completion",
+        "action": "partially completed"
+    },
+    {
+        "habit": "Workout",
+        "action": "not completed \ud83d\ude14"
+    },
+    {
+        "habit": "waterIntake",
+        "action": "drank 1-2 liters of water",
+        "timestamp": "2025-05-04 11:55:11"
+    },
+    {
+        "habit": "Workout",
+        "action": "not completed \ud83d\ude14"
+    },
+    {
+        "habit": "Make bed",
+        "detail": "I made my bed lol"
+    }
+]
