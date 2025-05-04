@@ -49,27 +49,28 @@ def main():
 3. 20+ min
 4. Exit""")
             choice = input("(1-4)-- ")
-            if choice == "1":
-                print(f"{name} got 5-10 min of sunlight! Let's go.")
-                timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                startData.append({"habit": "Sunlight", "duration": "5-10 min", "timestamp": timestamp})
-                save_data(startData)  # Save data after updating
-                break
-            elif choice == "2":
-                print(f"{name} got 10-20 min of sunlight! Let's go.")
-                timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                startData.append({"habit": "Sunlight", "duration": "10-20 min", "timestamp": timestamp})
-                save_data(startData)
-                break
-            elif choice == "3":
-                print(f"{name} got 20+ min of sunlight! Let's go.")
-                timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                startData.append({"habit": "Sunlight", "duration": "20+ min", "timestamp": timestamp})
-                save_data(startData)
-                break
-            elif choice == "4":
-                print(f"Goodbye {name}! Catch you on the flip side.")
-                break
+            if choice.isdigit():
+              if choice == "1":
+                  print(f"{name} got 5-10 min of sunlight! Let's go.")
+                  timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                  startData.append({"habit": "Sunlight", "duration": "5-10 min", "timestamp": timestamp})
+                  save_data(startData)  # Save data after updating
+                  break
+              elif choice == "2":
+                  print(f"{name} got 10-20 min of sunlight! Let's go.")
+                  timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                  startData.append({"habit": "Sunlight", "duration": "10-20 min", "timestamp": timestamp})
+                  save_data(startData)
+                  break
+              elif choice == "3":
+                  print(f"{name} got 20+ min of sunlight! Let's go.")
+                  timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                  startData.append({"habit": "Sunlight", "duration": "20+ min", "timestamp": timestamp})
+                  save_data(startData)
+                  break
+              elif choice == "4":
+                  print(f"Goodbye {name}! Catch you on the flip side.")
+                  break
             else:
                 print("Invalid choice, try again.")
 
@@ -82,27 +83,28 @@ def main():
 3. 10+ min
 4. Exit""")
             choice = input("(1-4)-- ")
-            if choice == "1":
-                print(f"{name} meditated for 2-5 min.")
-                timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                startData.append({"habit": "Meditation", "duration": "2-5 min", "timestamp": timestamp})
-                save_data(startData)
-                break
-            elif choice == "2":
-                print(f"{name} meditated for 5-10 min.")
-                timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                startData.append({"habit": "Meditation", "duration": "5-10 min", "timestamp": timestamp})
-                save_data(startData)
-                break
-            elif choice == "3":
-                print(f"{name} meditated for 10+ min.")
-                timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                startData.append({"habit": "Meditation", "duration": "10+ min", "timestamp": timestamp})
-                save_data(startData)
-                break
-            elif choice == "4":
-                print(f"Goodbye {name}! Try to get some meditation in tomorrow.")
-                break
+            if choice.isdigit():
+              if choice == "1":
+                  print(f"{name} meditated for 2-5 min.")
+                  timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                  startData.append({"habit": "Meditation", "duration": "2-5 min", "timestamp": timestamp})
+                  save_data(startData)
+                  break
+              elif choice == "2":
+                  print(f"{name} meditated for 5-10 min.")
+                  timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                  startData.append({"habit": "Meditation", "duration": "5-10 min", "timestamp": timestamp})
+                  save_data(startData)
+                  break
+              elif choice == "3":
+                  print(f"{name} meditated for 10+ min.")
+                  timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                  startData.append({"habit": "Meditation", "duration": "10+ min", "timestamp": timestamp})
+                  save_data(startData)
+                  break
+              elif choice == "4":
+                  print(f"Goodbye {name}! Try to get some meditation in tomorrow.")
+                  break
             else:
                 print("Invalid choice, try again.")
 
@@ -114,26 +116,27 @@ def main():
 2. n
 3. Exit""")
             choice = input("(1-3)-- ")
-            if choice == "1":
-                userInput = input("If you're open to this: What was it (else ignore it)? ")
-                print(f"You did: {userInput}")
-                print(f"We need to avoid doing {userInput}.")
-                print(f"But don't beat yourself up over it <3. Love you bro.")
-                timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                startData.append({"habit": "Instant Gratification", "action": userInput, "timestamp": timestamp})
-                save_data(startData)
-                break
-            elif choice == "2":
-                print("🎉 Awesome 🎉 That's good to hear.")
-                print(f"Keep up the great work {name}")
-                timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                startData.append({"habit": "Instant Gratification", "action": "None", "timestamp": timestamp})
-                save_data(startData)
-                break
-            elif choice == "3":
-                print(f"Goodbye {name}!")
-                print(f"Remember: YOU GOT THIS! 🎉 Don't give up 👊💪")
-                break
+            if choice.isdigit():
+              if choice == "1":
+                  userInput = input("If you're open to this: What was it (else ignore it)? ")
+                  print(f"You did: {userInput}")
+                  print(f"We need to avoid doing {userInput}.")
+                  print(f"But don't beat yourself up over it <3. Love you bro.")
+                  timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                  startData.append({"habit": "Instant Gratification", "action": userInput, "timestamp": timestamp})
+                  save_data(startData)
+                  break
+              elif choice == "2":
+                  print("🎉 Awesome 🎉 That's good to hear.")
+                  print(f"Keep up the great work {name}")
+                  timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                  startData.append({"habit": "Instant Gratification", "action": "None", "timestamp": timestamp})
+                  save_data(startData)
+                  break
+              elif choice == "3":
+                  print(f"Goodbye {name}!")
+                  print(f"Remember: YOU GOT THIS! 🎉 Don't give up 👊💪")
+                  break
             else:
                 print("Invalid choice, try again.")
 
@@ -149,29 +152,30 @@ def main():
                 4. exit
                 """)
           choice = input("(1-4)-- ")
-          if choice == "1":
-              print(f"🎉 {name} completed their schedule! 🎉")
-              timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-              startData.append({"habit": "Schedule Completion", "action": "completed", "timestamp": timestamp})
-              save_data(startData)
-              break
-          elif choice == "2":
-              print(f"{name} completed part of their schedule.")
-              timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-              startData.append({"habit": "Schedule Completion", "action": "partially completed", "timestamp": timestamp})
-              save_data(startData)
-              break
-          elif choice == "3":
-              print(f"{name} didn't complete their schedule.")
-              print(f"It happens bro. Just get back up and we keep trying. You got this. ")
-              timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-              startData.append({"habit": "Schedule Completion", "action": "didn't complete", "timestamp": timestamp})
-              save_data(startData)
-              break
-          elif choice == "4":
-              print(f"Goodbye {name}!")
-              print(f'Catch you on the flip side.')
-              break
+          if choice.isdigit():
+            if choice == "1":
+                print(f"🎉 {name} completed their schedule! 🎉")
+                timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                startData.append({"habit": "Schedule Completion", "action": "completed", "timestamp": timestamp})
+                save_data(startData)
+                break
+            elif choice == "2":
+                print(f"{name} completed part of their schedule.")
+                timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                startData.append({"habit": "Schedule Completion", "action": "partially completed", "timestamp": timestamp})
+                save_data(startData)
+                break
+            elif choice == "3":
+                print(f"{name} didn't complete their schedule.")
+                print(f"It happens bro. Just get back up and we keep trying. You got this. ")
+                timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                startData.append({"habit": "Schedule Completion", "action": "didn't complete", "timestamp": timestamp})
+                save_data(startData)
+                break
+            elif choice == "4":
+                print(f"Goodbye {name}!")
+                print(f'Catch you on the flip side.')
+                break
           else:
               print("Invalid choice.")
     elif "5" in habitsToTrack:
@@ -183,29 +187,30 @@ def main():
 3. Didn't complete workout
 4. Exit""")
             choice = input("(1-4)-- ")
-            if choice == "1":
-                print(f"🥳 {name} completed workout! 🥳")
-                timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                startData.append({"habit": "Workout", "action": "completed", "timestamp": timestamp})
-                save_data(startData)
-                break
-            elif choice == "2":
-                print(f"{name} partially completed workout. ")
-                timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                startData.append({"habit": "Workout", "action": "partially completed", "timestamp": timestamp})
-                save_data(startData)
-                break
-            elif choice == "3":
-                print(f"{name} didn't complete their workout 😔")
-                print(f"It happens to us bro. You just gotta keep pushing and you'll get it. I believe in you 👊 💪")
-                timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                startData.append({"habit": "Workout", "action": "not completed 😔"})
-                save_data(startData)
-                break
-            elif choice == "4":
-                print(f"Goodbye {name} 👋")
-                print("Be sure to workout! Don't want to miss that. ")
-                break
+            if choice.isdigit():
+              if choice == "1":
+                  print(f"🥳 {name} completed workout! 🥳")
+                  timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                  startData.append({"habit": "Workout", "action": "completed", "timestamp": timestamp})
+                  save_data(startData)
+                  break
+              elif choice == "2":
+                  print(f"{name} partially completed workout. ")
+                  timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                  startData.append({"habit": "Workout", "action": "partially completed", "timestamp": timestamp})
+                  save_data(startData)
+                  break
+              elif choice == "3":
+                  print(f"{name} didn't complete their workout 😔")
+                  print(f"It happens to us bro. You just gotta keep pushing and you'll get it. I believe in you 👊 💪")
+                  timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                  startData.append({"habit": "Workout", "action": "not completed 😔"})
+                  save_data(startData)
+                  break
+              elif choice == "4":
+                  print(f"Goodbye {name} 👋")
+                  print("Be sure to workout! Don't want to miss that. ")
+                  break
             else:
                 print("Invalid choice")
     elif "6" in habitsToTrack:
@@ -218,50 +223,46 @@ def main():
               4. 3+ liters of water
               5. Exit""")
         choice = input("(1-5)-- ")
-
-        if choice == "1":
-            print(f"{name} drank less than 1 liter of water")
-            print(f"Gotta up that water intake bro. You got this bro!")
+        if choice.isdigit():
+          if choice == "1":
+              print(f"{name} drank less than 1 liter of water")
+              print(f"Gotta up that water intake bro. You got this bro!")
+              timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+              startData.append({"habit": "waterIntake", "action": "drank < 1 liter of water", "timestamp": timestamp})
+              save_data(startData)
+              break
+          elif choice == "2":
+            print(f"{name} drank 1-2 liters of water.")
             timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            startData.append({"habit": "waterIntake", "action": "drank < 1 liter of water", "timestamp": timestamp})
-            save_data(startData)
-            break
-        elif choice == "2":
-            print(f"{name} drank between 1-2 liters of water")
-            print(f"Try to drink a little more water {name}. You got this!")
-            timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            startData.append({"habit": "waterIntake", "action": "drank 1-2 liters of water", "timestamp": timestamp})
+            startData.append({"habit": "waterIntake", "action": "1-2 liters", "timestamp": timestamp})
             save_data(startData)
             break
         elif choice == "3":
-            print(f"{name} drank between 2-3 liters of water")
-            print(f"Try 1 gallon (3 2/3 liters!) Your so close!")
+            print(f"{name} drank 2-3 liters of water.")
             timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            startData.append({"habit": "waterIntake", "action": "drank 2-3 liters of water", "timestamp": timestamp})
+            startData.append({"habit": "waterIntake", "action": "2-3 liters", "timestamp": timestamp})
             save_data(startData)
             break
         elif choice == "4":
-            print(f"{name} drank 3+ liters of water! WOW!")
-            print(f"🎉 Congrats bro 🎉")
+            print(f"{name} drank over 3 liters of water. HydraGod! 💧👑")
             timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            startData.append({"habit": "waterIntake", "action": "drank 3+ liters of water", "timestamp": timestamp})
+            startData.append({"habit": "waterIntake", "action": "3+ liters", "timestamp": timestamp})
             save_data(startData)
             break
         elif choice == "5":
-            print(f"Goodbye {name}.")
-            print(f"Catch you on the flip side!")
+            print(f"Goodbye {name}! Keep sipping. 🥤")
             break
         else:
             print("invalid choice")
 
     elif "7" in habitsToTrack:
-      print("Ohhhh interesting.... A CUSTOM HABIT?!?!? ")
-      custom = input("Name your custom habit: ")
-      detail = input(f"What did you do for '{custom}' today? ")
+      habit_name = input("What's the custom habit you'd like to track? ")
+      habit_action = input(f"What action did you take for '{habit_name}'? ")
       timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-      startData.append({"habit": custom, "detail": detail, "timestamp": timestamp})
+      startData.append({"habit": habit_name, "action": habit_action, "timestamp": timestamp})
       save_data(startData)
-      print(f"Custom habit '{custom}' recorded successfully")
+      print(f"{name}, we’ve logged your habit '{habit_name}' with action '{habit_action}'. Let’s keep going!")
+
 
 if __name__ == "__main__":
     main()
